@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title> {% block title %}{% endblock title %}Indian Institute of Information Technology Nagpur</title>
 
@@ -31,12 +31,6 @@
                 <a class="nav-link" class="logo" href="/about" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;" >About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" class="logo" href="/governance" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;">Governance</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" class="logo" href="/department" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;">Department</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" class="logo" href="/placements" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;">Placements</a>
               </li>
               <li class="nav-item">
@@ -45,6 +39,35 @@
               <li class="nav-item">
                 <a class="nav-link" class="logo" href="/nirf" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;">NIRF</a>
               </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Governance
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/committee" target="_blank">Committee</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/administration" target="_blank">Administration</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Departments
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/ece" target="_blank">Electronics & Communication Engg.</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/cse" target="_blank">Computer Science and Engg.</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/bsc" target="_blank">Basic Sciences</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/doct" target="_blank">Doctoral Programs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/progs" target="_blank">Programs</a></li>
+                </ul>
+              </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" style="filter: drop-shadow(0 0 15px cyan) !important; color: cyan !important;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Others
