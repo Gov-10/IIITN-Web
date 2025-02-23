@@ -1,0 +1,22 @@
+.background {
+    background-image: url("../images/IIIT4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute; /* Ensures it stays behind content */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Pushes background behind all elements */
+    filter: blur(4px);
+}
+
+.navbar {
+    position: relative; /* Ensures it stays above background */
+    z-index: 10; /* Higher than the background */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
