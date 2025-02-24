@@ -108,21 +108,20 @@
         <div class="image-card"><img src="{% static 'images/photo1.jpg' %}" alt="Image 7"></div>
         <div class="image-card"><img src="{% static 'images/IIIT4.jpg' %}" alt="Image 8"></div>
     </div>
-    {% comment %} <div id="scroll-btns">
+    <div id="scroll-btns">
     <button class="scroll-btn" onclick="scrollLeft()">⟨</button>
     <button class="scroll-btn" onclick="scrollRight()">⟩</button>
-    </div> {% endcomment %}
+    </div>
+    <script>
+      function scrollLeft() {
+          document.getElementById("gallery").scrollBy({ left: -300, behavior: "smooth" });
+      }
 
-    <script
-    function scrollLeft() {
-      document.getElementById("gallery").scrollBy({ left: -300, behavior: "smooth" });
-  }
-  function scrollRight() {
-      document.getElementById("gallery").scrollBy({ left: 300, behavior: "smooth" });
-  }
+      function scrollRight() {
+          document.getElementById("gallery").scrollBy({ left: 300, behavior: "smooth" });
+      }
   </script>
-  
-    
+
     
     <!-- Optional JavaScript; choose one of the two! -->
 
