@@ -93,6 +93,35 @@
             <p><b>Dr. Prem Lal Patel has been leading IIIT Nagpur towards academic excellence. With a strong vision for innovation and research, he has played a key role in shaping the institution's future.</b></p>
         </div>
     </div>
+    <hr>
+    <br>
+    <br>
+
+    <h2 id="myh2">Gallery</h2>
+    <div class="gallery-container" id="gallery">
+        <div class="image-card"><img src="{% static 'images/IIIT4.jpg' %}" alt="Image 1"></div>
+        <div class="image-card"><img src="{% static 'images/LAB1.jpg' %}" alt="Image 2"></div>
+        <div class="image-card"><img src="{% static 'images/photo1.jpg' %}" alt="Image 3"></div>
+        <div class="image-card"><img src="{% static 'images/campus4.jpg' %}" alt="Image 4"></div>
+        <div class="image-card"><img src="{% static 'images/campus1.jpg' %}" alt="Image 5"></div>
+        <div class="image-card"><img src="{% static 'images/campus2.jpg' %}" alt="Image 6"></div>
+        <div class="image-card"><img src="{% static 'images/photo1.jpg' %}" alt="Image 7"></div>
+        <div class="image-card"><img src="{% static 'images/IIIT4.jpg' %}" alt="Image 8"></div>
+    </div>
+    {% comment %} <div id="scroll-btns">
+    <button class="scroll-btn" onclick="scrollLeft()">⟨</button>
+    <button class="scroll-btn" onclick="scrollRight()">⟩</button>
+    </div> {% endcomment %}
+
+    <script
+    function scrollLeft() {
+      document.getElementById("gallery").scrollBy({ left: -300, behavior: "smooth" });
+  }
+  function scrollRight() {
+      document.getElementById("gallery").scrollBy({ left: 300, behavior: "smooth" });
+  }
+  </script>
+  
     
     
     <!-- Optional JavaScript; choose one of the two! -->

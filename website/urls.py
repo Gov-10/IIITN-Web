@@ -17,7 +17,8 @@ urlpatterns = [
     path("cse", views.cse, name="cse"),
     path("bsc", views.bsc, name="bsc"),
     path("docs", views.docs, name="docs"),
-    path("progs", views.progs, name="progs")
+    path("progs", views.progs, name="progs"),
+    path("home", views.home, name="home")
 
 
 ]
